@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- APIs accessed by the app -->
+    <key>NSPrivacyAccessedAPICategories</key>
+    <array>
+        <string>Messaging</string>  <!-- Firebase Messaging -->
+        <string>Analytics</string>  <!-- Firebase Analytics -->
+        <string>Authentication</string>  <!-- Google Sign-In, GTMAppAuth -->
+        <string>Location</string>  <!-- Geolocator -->
+        <string>Photos</string>  <!-- Image Picker -->
+        <string>Network</string>  <!-- Connectivity Plus -->
+        <string>File Storage</string>  <!-- Shared Preferences, Sqflite -->
+        <string>App Usage Data</string>  <!-- Firebase Core, Package Info Plus -->
+    </array>
+
+    <!-- Collected data types and their purposes -->
+    <key>NSPrivacyCollectedDataTypes</key>
+    <array>
+        <dict>
+            <key>NSPrivacyCollectedDataType</key>
+            <string>Identifiers</string>
+            <key>NSPrivacyCollectedDataTypeLinked</key>
+            <true/>
+            <key>NSPrivacyCollectedDataUsage</key>
+            <array>
+                <string>Authentication</string>
+                <string>App Functionality</string>
+                <string>Analytics</string>
+            </array>
+        </dict>
+        <dict>
+            <key>NSPrivacyCollectedDataType</key>
+            <string>Location</string>
+            <key>NSPrivacyCollectedDataTypeLinked</key>
+            <true/>
+            <key>NSPrivacyCollectedDataUsage</key>
+            <array>
+                <string>App Functionality</string>
+            </array>
+        </dict>
+        <dict>
+            <key>NSPrivacyCollectedDataType</key>
+            <string>Contact Info</string>
+            <key>NSPrivacyCollectedDataTypeLinked</key>
+            <true/>
+            <key>NSPrivacyCollectedDataUsage</key>
+            <array>
+                <string>Authentication</string>
+            </array>
+        </dict>
+        <dict>
+            <key>NSPrivacyCollectedDataType</key>
+            <string>App Usage Data</string>
+            <key>NSPrivacyCollectedDataTypeLinked</key>
+            <true/>
+            <key>NSPrivacyCollectedDataUsage</key>
+            <array>
+                <string>Analytics</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>
